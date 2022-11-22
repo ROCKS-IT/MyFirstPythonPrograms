@@ -1,5 +1,5 @@
-nom = "DUPONT"
-prenom = "PIERRE"
+nom = "TIER"
+prenom = "Benjamin"
 math = 12
 anglais = 15
 info = 12.5
