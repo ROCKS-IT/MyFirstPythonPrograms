@@ -6,12 +6,12 @@ notes = []
 result =0
 
 for i in range(nombreEtudiants):
-    notes.append(int(input("Note d'un élève:")))
+    notes.append(int(input("Note d'un élève: ")))
 
 for i in range(len(notes)):
     result = result + notes[i]
 moyenne = (result/nombreEtudiants)
-print("moyenne de classe :",moyenne)
+print("\n""Moyenne de classe :",moyenne,"\n")
 
 print("Numéro de l’Etudiant | note | ecart a la moyenne")
 for i in range(nombreEtudiants):
