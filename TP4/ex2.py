@@ -6,7 +6,7 @@ notes = []
 result =0
 
 for i in range(nombreEtudiants):
-    notes.append(int(input("Note d'un élève: ")))
+    notes.append(int(input(f"Note etudiant {i}: ")))
 
 for i in range(len(notes)):
     result = result + notes[i]
