@@ -1,36 +1,38 @@
 
 L = []
 
-y = 0
-N = 0
-saveTi= 0
-saveTy = 0
-position = 0
-p=0
 
-N = int(input("Entrez la valeur"))
+tempminlocation = 0
+save = 0
 
-for i in range(N):
-    x = int(input(f"Valeur n{i}"))
-    L.append(x)
+n = int(input("Donne la taille du tableau:"))
+for i in range(n):
+    val = int(input("Valeur:"))
+    L.append(val)
 
+tempminvalue = L[0]
 
-for i in range(N):
-    saveTy = L[i]
+print(L)
 
 
-    while y != N:
-        if L[y] < saveTy:
-            saveTy = L[y]
-            position = y
-
-        y =  y+1
-
-    saveTi = L[i]
-    L[i] = saveTy
-    L[position] = saveTi
-    p += 1
-    y=0
-    y = p
-    position = y
+for i in range (n-1):
+    for w in range(i+1, len(L)):
+        if tempminvalue > L[w]:
+            tempminvalue = L[w]
+            tempminlocation = w
+    save = L[i]
+    L[i]=tempminvalue
+    L[tempminlocation]=save
+    #REMISE A ZERO DES VALEURS
+    tempminlocation = i+1
+    tempminvalue = L[i+1]
+    save = 0
     print(L)
+
+
+
+
+
+
+
+
