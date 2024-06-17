@@ -1,6 +1,6 @@
 ##############QUESTION 1##############
 input("Question 1:")
-binome = ('pierre.bourger@uha.fr', 1,  'kevin.de-azevedo@uha.fr', 2)
+binome = ('jhon.doe@uha.fr', 1,  'foo.bar@uha.fr', 2)
 print("L'édudiant",binome[0],"est en binome avec l'étudiant",binome[2])
 
 
@@ -25,7 +25,7 @@ print("L'édudiant",binome[0],"est seul et triste")
 ###### QUESTION 4 ###########
 input("Question 4:")
 #Remise a zero, pour le but de l'exo
-binome = ('pierre.bourger@uha.fr', 1,  'kevin.de-azevedo@uha.fr', 2)
+binome = ('jhon.doe@uha.fr', 1,  'foo.bar@uha.fr', 2)
 binome = list(binome)
 binome.append(str(input("Login de la troisième personne:")))
 binome.append(3)
